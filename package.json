@@ -1,12 +1,11 @@
 {
   "name": "vite-plugin-yaml2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Vite plugin for convert YAML as JS export default",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mzaini30/vite-plugin-yaml2.git"

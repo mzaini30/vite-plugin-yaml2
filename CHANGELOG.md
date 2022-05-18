@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.3
+
+- Convert codebase from ESM to CJS
+
 ## 0.0.2
 
 - Change tab to two spaces in `README.md`

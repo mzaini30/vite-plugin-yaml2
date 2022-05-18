@@ -1,9 +1,9 @@
-import {load} from 'js-yaml'
-import toSource from 'tosource'
+const {load} = require("js-yaml")
+const toSource = require("tosource")
 
 const fileRegex = /\.ya?ml$/
 
-export default function(){
+function main(){
     return {
         name: 'yaml-to-js',
 
@@ -22,3 +22,5 @@ export default function(){
         }
     }
 }
+
+module.exports = main
