@@ -21,11 +21,11 @@ We call it in `App.vue`:
 
 ```html
 <script setup="">
-	import data from './data.yml'
+  import data from './data.yml'
 </script>
 
 <template>
-	<p>{{ data }}</p>
+  <p>{{ data }}</p>
 </template>
 ```
 
@@ -33,19 +33,19 @@ This will return this:
 
 ```json
 [
-	{ 
-		"name": "Andre", 
-		"class": 1 
-	}, 
-	{ 
-		"name": "Agus", 
-		"class": 2, 
-		"hobby": [ 
-			"Swimming", 
-			"Fishing", 
-			"Sleep" 
-		] 
-	} 
+  { 
+    "name": "Andre", 
+    "class": 1 
+  }, 
+  { 
+    "name": "Agus", 
+    "class": 2, 
+    "hobby": [ 
+      "Swimming", 
+      "Fishing", 
+      "Sleep" 
+    ] 
+  } 
 ]
 ```
 

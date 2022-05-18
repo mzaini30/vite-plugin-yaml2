@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-yaml2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vite plugin for convert YAML as JS export default",
   "main": "index.js",
   "scripts": {
