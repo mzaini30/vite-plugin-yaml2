@@ -57,9 +57,9 @@ npm i vite-plugin-yaml2
 
 ## Setup
 
-Write this in `vite.config.js`:
+Write this in `vite.config.ts`:
 
-```javascript
+```typescript
 import { defineConfig } from 'vite'
 import pluginYaml from 'vite-plugin-yaml2'
 
