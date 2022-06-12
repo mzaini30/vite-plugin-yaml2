@@ -1,24 +1,32 @@
 {
   "name": "vite-plugin-yaml2",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Vite plugin for convert YAML as JS export default",
-  "main": "index.js",
+  "main": "dist/index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild",
+    "prepublishOnly": "npm run build",
+    "release": "bumpp --tag --commit --push"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mzaini30/vite-plugin-yaml2.git"
   },
-  "keywords": ["vite"],
-  "author": "",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "yaml"
+  ],
+  "author": "Zen",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mzaini30/vite-plugin-yaml2/issues"
   },
   "homepage": "https://github.com/mzaini30/vite-plugin-yaml2#readme",
-  "dependencies": {
+  "devDependencies": {
+    "bumpp": "^7.1.1",
     "js-yaml": "^4.1.0",
-    "tosource": "2.0.0-alpha.3"
+    "tosource": "2.0.0-alpha.3",
+    "unbuild": "^0.7.4"
   }
 }
