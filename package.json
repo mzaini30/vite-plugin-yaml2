@@ -4,12 +4,6 @@
   "description": "Vite plugin for convert YAML as JS export default",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "exports": {
-    "./": {
-      "require": "dist/index.cjs",
-      "import": "dist/index.mjs"
-    }
-  },
   "scripts": {
     "build": "unbuild",
     "prepublishOnly": "npm run build",
