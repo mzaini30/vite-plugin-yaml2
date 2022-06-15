@@ -6,12 +6,19 @@
   "scripts": {
     "build": "unbuild",
     "prepublishOnly": "npm run build",
-    "release": "bumpp --tag --commit --push"
+    "release": "bumpp --tag --commit --push",
+    "prettier": "prettier --write src/index.ts"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run prettier"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mzaini30/vite-plugin-yaml2.git"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "vite",
     "vite-plugin",
@@ -24,8 +31,11 @@
   },
   "homepage": "https://github.com/mzaini30/vite-plugin-yaml2#readme",
   "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
     "bumpp": "^7.1.1",
     "js-yaml": "^4.1.0",
+    "prettier": "^2.7.0",
+    "simple-git-hooks": "^2.8.0",
     "tosource": "2.0.0-alpha.3",
     "unbuild": "^0.7.4"
   }

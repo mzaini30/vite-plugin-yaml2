@@ -1,14 +1,20 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/js-yaml': ^4.0.5
   bumpp: ^7.1.1
   js-yaml: ^4.1.0
+  prettier: ^2.7.0
+  simple-git-hooks: ^2.8.0
   tosource: 2.0.0-alpha.3
   unbuild: ^0.7.4
 
 devDependencies:
+  '@types/js-yaml': 4.0.5
   bumpp: 7.1.1
   js-yaml: 4.1.0
+  prettier: 2.7.0
+  simple-git-hooks: 2.8.0
   tosource: 2.0.0-alpha.3
   unbuild: 0.7.4
 
@@ -369,6 +375,10 @@ packages:
 
   /@types/estree/0.0.51:
     resolution: {integrity: sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ==}
+    dev: true
+
+  /@types/js-yaml/4.0.5:
+    resolution: {integrity: sha512-FhpRzf927MNQdRZP0J5DLIdTXhjLYzeUTmLAu69mnVksLH9CJY3IuSeEgbKUki7GQZm0WqDkGzyxju2EZGD2wA==}
     dev: true
 
   /@types/node/17.0.42:
@@ -1340,6 +1350,12 @@ packages:
       pathe: 0.2.0
     dev: true
 
+  /prettier/2.7.0:
+    resolution: {integrity: sha512-nwoX4GMFgxoPC6diHvSwmK/4yU8FFH3V8XWtLQrbj4IBsK2pkYhG4kf/ljF/haaZ/aii+wNJqISrCDPgxGWDVQ==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
   /pretty-bytes/6.0.0:
     resolution: {integrity: sha512-6UqkYefdogmzqAZWzJ7laYeJnaXDy2/J+ZqiiMtS7t7OfpXWTlaeGMwX8U6EFvPV/YWWEKRkS8hKS4k60WHTOg==}
     engines: {node: ^14.13.1 || >=16.0.0}
@@ -1455,6 +1471,12 @@ packages:
   /shebang-regex/3.0.0:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
+    dev: true
+
+  /simple-git-hooks/2.8.0:
+    resolution: {integrity: sha512-ocmZQORwa6x9mxg+gVIAp5o4wXiWOHGXyrDBA0+UxGKIEKOyFtL4LWNKkP/2ornQPdlnlDGDteVeYP5FjhIoWA==}
+    hasBin: true
+    requiresBuild: true
     dev: true
 
   /sisteransi/1.0.5:
