@@ -3,7 +3,7 @@ import toSource from "tosource";
 
 const fileRegex = /\.ya?ml$/;
 
-export default function VitePluginYaml() {
+export default function() {
   return {
     name: "yaml-to-js",
 
