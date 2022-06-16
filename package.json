@@ -4,8 +4,9 @@
   "description": "Vite plugin for convert YAML as JS export default",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "unbuild",
+    "build": "pkgroll",
     "prepublishOnly": "npm run build",
     "release": "bumpp --tag --commit --push",
     "prettier": "prettier --write src/index.ts"
@@ -35,9 +36,9 @@
     "@types/js-yaml": "^4.0.5",
     "bumpp": "^7.1.1",
     "js-yaml": "^4.1.0",
+    "pkgroll": "^1.3.1",
     "prettier": "^2.7.0",
-    "simple-git-hooks": "^2.8.0",
     "tosource": "2.0.0-alpha.3",
-    "unbuild": "^0.7.4"
+    "typescript": "^4.7.3"
   }
 }
