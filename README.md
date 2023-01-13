@@ -21,7 +21,7 @@ We call it in `App.vue`:
 
 ```html
 <script setup="">
-  import data from './data.yml'
+  import data from "./data.yml";
 </script>
 
 <template>
@@ -33,19 +33,15 @@ This will return this:
 
 ```json
 [
-  { 
-    "name": "Andre", 
-    "class": 1 
-  }, 
-  { 
-    "name": "Agus", 
-    "class": 2, 
-    "hobby": [ 
-      "Swimming", 
-      "Fishing", 
-      "Sleep" 
-    ] 
-  } 
+  {
+    "name": "Andre",
+    "class": 1
+  },
+  {
+    "name": "Agus",
+    "class": 2,
+    "hobby": ["Swimming", "Fishing", "Sleep"]
+  }
 ]
 ```
 
@@ -60,13 +56,17 @@ npm i vite-plugin-yaml2
 Write this in `vite.config.ts`:
 
 ```typescript
-import { defineConfig } from 'vite'
-import pluginYaml from 'vite-plugin-yaml2'
+import { defineConfig } from "vite";
+import pluginYaml from "vite-plugin-yaml2";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    pluginYaml(),
-  ]
-})
+  plugins: [pluginYaml()],
+});
 ```
+
+## Support Me
+
+Gopay : 0815 4514 3654
+
+Paypal : muhzaini30@gmail.com

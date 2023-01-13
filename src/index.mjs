@@ -7,7 +7,7 @@ export default function () {
   return {
     name: "yaml-to-js",
 
-    transform(src: any, id: any) {
+    transform(src, id) {
       if (fileRegex.test(id)) {
         // src
 

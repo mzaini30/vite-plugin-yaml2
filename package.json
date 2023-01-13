@@ -1,25 +1,19 @@
 {
   "name": "vite-plugin-yaml2",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vite plugin for convert YAML as JS export default",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "types": "./yaml.d.ts",
   "scripts": {
-    "build": "pkgroll",
-    "prepublishOnly": "npm run build",
-    "release": "bumpp --tag --commit --push",
-    "prettier": "prettier --write src/index.ts"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npm run prettier"
+    "prepublishOnly": "esbuild ./src/index.mjs --bundle --outfile=./dist/index.mjs --format=esm --minify"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mzaini30/vite-plugin-yaml2.git"
   },
   "files": [
-    "dist"
+    "dist",
+    "./yaml.d.ts"
   ],
   "keywords": [
     "vite",
@@ -33,12 +27,8 @@
   },
   "homepage": "https://github.com/mzaini30/vite-plugin-yaml2#readme",
   "devDependencies": {
-    "@types/js-yaml": "^4.0.5",
-    "bumpp": "^7.1.1",
+    "esbuild": "^0.16.17",
     "js-yaml": "^4.1.0",
-    "pkgroll": "^1.3.1",
-    "prettier": "^2.7.0",
-    "tosource": "2.0.0-alpha.3",
-    "typescript": "^4.7.3"
+    "tosource": "2.0.0-alpha.3"
   }
 }
