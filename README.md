@@ -65,8 +65,12 @@ export default defineConfig({
 });
 ```
 
-## Support Me
+## TypeScript Error
 
-Gopay : 0815 4514 3654
+Add this inside `/src/vite-env.d.ts`:
 
-Paypal : muhzaini30@gmail.com
+```typescript
+/// <reference types="vite-plugin-yaml2" />
+```
+
+[Join Community](https://zen.mabaiz.web.id/komunitas)
