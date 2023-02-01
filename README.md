@@ -70,12 +70,6 @@ export default defineConfig({
 Add this inside `/src/vite-env.d.ts`:
 
 ```typescript
-/// <reference types="vite-plugin-yaml2" />
-```
-
-## Type Declaration
-
-```typescript
 declare module "*.yaml" {
   const value: any;
   export default value;
@@ -86,4 +80,4 @@ declare module "*.yml" {
 }
 ```
 
-[Join Community](https://zen.mabaiz.web.id/komunitas)
+[Join Community](https://zenzen.web.id/komunitas)
