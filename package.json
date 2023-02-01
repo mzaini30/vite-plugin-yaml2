@@ -1,9 +1,8 @@
 {
   "name": "vite-plugin-yaml2",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Vite plugin for convert YAML as JS export default",
   "main": "./dist/index.mjs",
-  "types": "./yaml.d.ts",
   "scripts": {
     "prepublishOnly": "esbuild ./src/index.mjs --bundle --outfile=./dist/index.mjs --format=esm --minify"
   },
@@ -12,8 +11,7 @@
     "url": "git+https://github.com/mzaini30/vite-plugin-yaml2.git"
   },
   "files": [
-    "dist",
-    "./yaml.d.ts"
+    "dist"
   ],
   "keywords": [
     "vite",

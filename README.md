@@ -73,4 +73,17 @@ Add this inside `/src/vite-env.d.ts`:
 /// <reference types="vite-plugin-yaml2" />
 ```
 
+## Type Declaration
+
+```typescript
+declare module "*.yaml" {
+  const value: any;
+  export default value;
+}
+declare module "*.yml" {
+  const value: any;
+  export default value;
+}
+```
+
 [Join Community](https://zen.mabaiz.web.id/komunitas)
